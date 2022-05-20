@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+#❤️ {
+    font-family: Pacifico, Comic Sans MS, cursive;
+    font-size: 10rem;
+    line-height: 1;
+}
+
+#❤️::after {
+    content: "";
+    height: 10rem;
+    width: 7rem;
+    position: relative;
+    display: inline-block;
+    background-size: cover;
+    background-image: url("../assets/tail.svg");
+    transform: rotate(35deg);
+    left: -1.3rem;
+}
+
+body{
+  margin: 0;
+}
+
+body div {
+  background:url(''),linear-gradient(233deg, #FED18C, #FFD2FC, #AAFFE5, #bf71ce);
+  width:100%;
+  height:100vh;
+  background-size:cover;
+  background-blend-mode: hard-light;
+  animation: hue-rotate 3s linear infinite;
+}
+
+@keyframes hue-rotate {
+from {
+  -webkit-filter: hue-rotate(0);
+  -moz-filter: hue-rotate(0);
+  -ms-filter: hue-rotate(0);
+  filter: hue-rotate(0);
+}
+to {
+  -webkit-filter: hue-rotate(360deg);
+  -moz-filter: hue-rotate(360deg);
+  -ms-filter: hue-rotate(360deg);
+  filter: hue-rotate(360deg);
+}
+}
