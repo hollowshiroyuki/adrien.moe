@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+#❤️ {
+    font-family: Pacifico, Comic Sans MS, cursive;
+    font-size: 13rem;
+    line-height: 1;
+    left: -10rem;
+}
+
+#❤️::after {
+    content: "";
+    height: 10rem;
+    width: 7rem;
+    position: relative;
+    display: inline-block;
+    background-size: cover;
+    background-image: url("../assets/tail.svg");
+    background-size: cover;
+    transform: rotate(37deg);
+    left: -1rem;
+}

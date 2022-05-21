@@ -1,47 +1,39 @@
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-
-#❤️ {
-    font-family: Pacifico, Comic Sans MS, cursive;
-    font-size: 10rem;
-    line-height: 1;
+body {
+    width: 100vw;
+    height:100vh;
+    min-width: 100vw;
+    min-height: 100vh;
+    max-width: 100vw;
+    max-height: 100vh;
+    background:url('../assets/adrien_tile.png');
+    background-repeat: repeat;
+    background-size: 7rem;
+    overflow: hidden;
 }
 
-#❤️::after {
-    content: "";
-    height: 10rem;
-    width: 7rem;
-    position: relative;
+#chromeisdeftheworstbrowserever {
+    z-index: -1;
+    position: absolute;
+    width: 100vw;
+    height:100vh;
+    min-width: 100vw;
+    min-height: 100vh;
+    max-width: 100vw;
+    max-height: 100vh;
+    content: '';
     display: inline-block;
-    background-size: cover;
-    background-image: url("../assets/tail.svg");
-    transform: rotate(35deg);
-    left: -1.3rem;
+    top: 0;
+    left: 0;
+    opacity: 65%;
+    background: linear-gradient(233deg, #FED18C, #FFD2FC, #AAFFE5, #bf71ce);
+    animation: hueRotate 1s linear infinite;
 }
 
-body{
-  margin: 0;
-}
-
-body div {
-  background:url(''),linear-gradient(233deg, #FED18C, #FFD2FC, #AAFFE5, #bf71ce);
-  width:100%;
-  height:100vh;
-  background-size:cover;
-  background-blend-mode: hard-light;
-  animation: hue-rotate 3s linear infinite;
-}
-
-@keyframes hue-rotate {
-from {
-  -webkit-filter: hue-rotate(0);
-  -moz-filter: hue-rotate(0);
-  -ms-filter: hue-rotate(0);
-  filter: hue-rotate(0);
-}
-to {
-  -webkit-filter: hue-rotate(360deg);
-  -moz-filter: hue-rotate(360deg);
-  -ms-filter: hue-rotate(360deg);
-  filter: hue-rotate(360deg);
-}
+@keyframes hueRotate {
+    from {
+        filter: hue-rotate(0);
+    }
+    to {
+        filter: hue-rotate(360deg);
+    }
 }

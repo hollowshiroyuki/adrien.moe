@@ -1,0 +1,50 @@
+:root {
+    --dvd-size: 12rem;
+}
+
+.📀
+{
+    z-index: 1;
+    user-select: none;
+    display: block;
+    width: var(--dvd-size);
+    height: var(--dvd-size);
+    position: absolute;
+    animation:  moveX 5.2s linear 0s infinite alternate,
+                moveY 2.2s linear 0s infinite alternate,
+                weeee .6s linear 0s infinite;
+}
+
+@media mobile {
+    .📀 {
+        width: 12rem;
+        height: 12rem;
+        animation:  moveX 10s linear 0s infinite alternate,
+                    moveY 1s linear 0s infinite alternate,
+                    weeee .9s linear 0s infinite;
+    }
+}
+
+@keyframes moveX {
+    from {
+        left: 0;
+    } to {
+        left: calc(100vw - var(--dvd-size));
+    }
+}
+
+@keyframes moveY {
+    from {
+        top: 0;
+    } to {
+        top: calc(100vh - var(--dvd-size));
+    }
+}
+
+@keyframes weeee {
+    from {
+        transform: rotate(0);
+    } to {
+        transform: rotate(360deg);
+    }
+}
