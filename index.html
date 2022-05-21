@@ -2,8 +2,8 @@
 <!--
 ⠀⣞⢽⢪⢣⢣⢣⢫⡺⡵⣝⡮⣗⢷⢽⢽⢽⣮⡷⡽⣜⣜⢮⢺⣜⢷⢽⢝⡽⣝
 ⠸⡸⠜⠕⠕⠁⢁⢇⢏⢽⢺⣪⡳⡝⣎⣏⢯⢞⡿⣟⣷⣳⢯⡷⣽⢽⢯⣳⣫⠇
-⠀⠀⢀⢀⢄⢬⢪⡪⡎⣆⡈⠚⠜⠕⠇⠗⠝⢕⢯⢫⣞⣯⣿⣻⡽⣏⢗⣗⠏⠀
-⠀⠪⡪⡪⣪⢪⢺⢸⢢⢓⢆⢤⢀⠀⠀⠀⠀⠈⢊⢞⡾⣿⡯⣏⢮⠷⠁⠀⠀
+⠀⠀⢀⢀⢄⢬⢪⡪⡎⣆⡈⠚⠜⠕⠇⠗⠝⢕⢯⢫⣞⣯⣿⣻⡽⣏⢗⣗⠏
+⠀⠪⡪⡪⣪⢪⢺⢸⢢⢓⢆⢤⢀⠀⠀⠀⠀⠈⢊⢞⡾⣿⡯⣏⢮⠷⠁
 ⠀⠀⠀⠈⠊⠆⡃⠕⢕⢇⢇⢇⢇⢇⢏⢎⢎⢆⢄⠀⢑⣽⣿⢝⠲⠉⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⡿⠂⠠⠀⡇⢇⠕⢈⣀⠀⠁⠡⠣⡣⡫⣂⣿⠯⢪⠰⠂⠀⠀⠀⠀
 ⠀⠀⠀⠀⡦⡙⡂⢀⢤⢣⠣⡈⣾⡃⠠⠄⠀⡄⢱⣌⣶⢏⢊⠂⠀⠀⠀⠀⠀⠀
@@ -15,28 +15,85 @@
 ⠀⠀⠀⠀⠁⠇⠡⠩⡫⢿⣝⡻⡮⣒⢽⠋⠀
 -->
 <html>
-    <head>
-        <meta charset="utf-8"/>
-        <!-- <meta name="viewport" content="width=device-width"> -->
-        <title>💞 REMY 😳</title>
-        <script src="https://cdn.tailwindcss.com"></script>
-        <script src="scripts/phil.js"></script>
-        <link rel="icon" href="assets/favicon.ico"/>
-        <link rel="stylesheet" href="styles/style.css"/>
-        <link rel="stylesheet" href="styles/dvd.css"/>
-        <link rel="stylesheet" href="styles/title.css"/>
-    </head>
-    <body class="h-screen w-screen text-white" onmousedown="document.getElementById('🎶').play()">
-        <div id="chromeisdeftheworstbrowserever"></div>
-        <div class="📀"><img src="assets/adrien_dvd.png"/></div>
-        <div class="grid place-items-center h-screen" style="z-index: unset;">
-            <h1 id="❤️" class="font-black select-none">Adrien</h1>
+
+<head>
+    <meta charset="utf-8" />
+    <!-- <meta name="viewport" content="width=device-width"> -->
+    <title>💞 REMY 😳</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="scripts/phil.js"></script>
+    <link rel="icon" href="assets/favicon.ico" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/dvd.css" />
+    <link rel="stylesheet" href="styles/title.css" />
+    <link rel="stylesheet" href="styles/spin.css" />
+</head>
+
+<body class="h-screen w-screen text-white" onload="init()">
+    <div id="chromeisdeftheworstbrowserever"></div>
+    <div class="📀"><img src="assets/adrien_dvd.png" /></div>
+    <div class="absolute grid place-items-center h-screen w-screen" style="z-index: -1">
+        <div id="🤩">
+            <div class="🌀" style="--size: 500px">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="🌀" style="--size: 900px">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="🌀" style="--size: 1300px">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="🌀" style="--size: 1700px">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
         </div>
-        <div class="absolute bottom-1.5 right-1.5">
-            <p class="text-3xl"><b>pas</b> par le créateur de <a class="underline" href="https://viken.fun">viken.fun</a></p>
-        </div>
-        <audio loop id="🎶">
-            <source src="assets/nicetraditionaljapanesesongawesomewow.mp3" type="audio/mp3"/>
-        </audio>
-    </body>
+    </div>
+    <div class="grid place-items-center h-screen" style="z-index: unset;">
+        <h1 id="❤️" class="font-black select-none">Adrien</h1>
+    </div>
+    <div class="absolute bottom-1.5 right-1.5">
+        <p class="text-3xl"><b>pas</b> par le créateur de <a class="underline" href="https://viken.fun">viken.fun</a>
+        </p>
+    </div>
+    <audio loop id="🎶">
+        <source src="assets/nicetraditionaljapanesesongawesomewow.mp3#t=10" type="audio/mp3" />
+    </audio>
+</body>
+
 </html>

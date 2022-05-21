@@ -1,3 +1,7 @@
+html {
+    cursor: url('../assets/adrien_cursor.png'), auto;
+}
+
 body {
     width: 100vw;
     height:100vh;

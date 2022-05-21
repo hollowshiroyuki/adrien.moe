@@ -1,0 +1,49 @@
+#🤩 {
+    position: relative;
+    filter: grayscale();
+}
+
+#🤩 .🌀:nth-child(odd)
+{
+    animation: spin infinite linear 8s;
+}
+
+#🤩 .🌀:nth-child(even)
+{
+    animation: spinRev infinite linear 8s;
+}
+
+.🌀 {
+    position: absolute;
+    top: calc(var(--size) / 2 * -1);
+    left: calc(var(--size) / 2 * -1);
+    width: var(--size);
+    height: var(--size);
+}
+
+.🌀 div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 120px;
+    height: 120px;
+    margin: calc(-100px / 2);
+    border-radius: 30%;
+    background: url('../assets/adrien_dvd.png');
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0);
+    } to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spinRev {
+    from {
+        transform: rotate(360deg);
+    } to {
+        transform: rotate(0);
+    }
+}

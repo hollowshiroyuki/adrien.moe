@@ -1,4 +1,22 @@
-console.log("\
+function init() {
+  document.getElementById('🎶').currentTime = 15;
+
+  document.getElementsByTagName('body')[0].addEventListener('click', () => {
+    document.getElementById('🎶').play();
+  }, false);
+
+  document.querySelectorAll('.🌀').forEach((circlegraph)=>{
+    let circles = circlegraph.querySelectorAll('div')
+    let angle = 360-90, dangle = 360 / circles.length
+    for(let i = 0; i < circles.length; i++){
+      let circle = circles[i]
+      angle += dangle
+      // rotate(${angle}deg)
+      circle.style.transform = `rotate(${angle}deg) translate(${circlegraph.clientWidth / 2}px)`
+    }
+  })
+
+  console.log("\
             .:::----::.\n\
           .:-----========-.\n\
         :------------======-::\n\
@@ -37,4 +55,5 @@ console.log("\
   #%####%%@@@@#+-.     .##*+++*##%:\n\
   -*%%%%%%%*=.          ##*****##%#\n\
       ..                =%%%%%%@@@@.\n\
-                          :-=+***+:");
+                         :-=+***+:");
+}
