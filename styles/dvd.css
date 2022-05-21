@@ -1,5 +1,5 @@
 :root {
-    --dvd-size: 12rem;
+    --dvd-size: 13rem;
 }
 
 .📀
@@ -13,6 +13,11 @@
     animation:  moveX 5.2s linear 0s infinite alternate,
                 moveY 2.2s linear 0s infinite alternate,
                 weeee .6s linear 0s infinite;
+}
+
+.📀 img {
+    width: 100%;
+    height: 100%;
 }
 
 @media mobile {
