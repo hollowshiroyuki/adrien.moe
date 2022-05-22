@@ -24,6 +24,9 @@ function init() {
     jukebox.play();
     jukebox.addEventListener('ended', function alarm() {
       this.removeEventListener('ended', alarm);
+      document.querySelectorAll(".🌀 div").forEach( e => {
+        e.style.backgroundImage = "url('assets/sus.png')"
+      });
       document.getElementById("🔪").style.visibility = "visible";
       document.getElementById("chromeisdeftheworstbrowserever").style.backgroundImage = "linear-gradient(233deg, #F00, #000, #F00, #000)";
       document.getElementById("chromeisdeftheworstbrowserever").style.animation = "linear infinite 1s susback";
