@@ -9,7 +9,8 @@
 #🔪 {
     height: 30rem;
     content: url("../assets/amongus.png");
-    animation: infinite linear 1s 🔪;
+    animation:  infinite linear 1s 🔪,
+                infinite linear 3s 🔪🌈;
 }
 
 @keyframes 🔪 {
@@ -17,5 +18,13 @@
         transform: rotate3d(0, 0, 0, 0);
     } to {
         transform: rotate3d(0.7, 3, -0.7, 360deg);
+    }
+}
+
+@keyframes 🔪🌈 {
+    from {
+        filter: hue-rotate(0);
+    } to {
+        filter: hue-rotate(360deg);
     }
 }
