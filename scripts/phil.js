@@ -17,6 +17,8 @@ function init() {
 
   document.getElementById("📀").addEventListener('click', function kill() {
     this.removeEventListener('click', kill);
+    document.getElementById("chromeisdeftheworstbrowserever").style.backgroundImage = "linear-gradient(233deg, #F00, #000, #F00, #000)"
+    document.getElementById("chromeisdeftheworstbrowserever").style.animation = "linear infinite 1s susback"
     document.querySelector("#📀 img").src = "assets/adrien_slash.png";
     document.getElementById("🔪").style.visibility = "visible";
     let jukebox = document.getElementById("🎶")
