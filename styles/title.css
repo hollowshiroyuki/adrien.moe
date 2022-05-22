@@ -10,8 +10,21 @@
     display: inline-block;
     width: 5rem;
     height: 10rem;
-    transform: rotate(30deg);
     background-image: url("../assets/tail.svg");
     background-repeat: no-repeat;
     background-size: contain;
+    animation: ease-in-out alternate-reverse infinite 4s 🐈;
+    transform-origin: bottom left;
+}
+
+@keyframes 🐈 {
+    0% {
+        transform: translate(-2.2rem, -2rem) rotate(40deg);
+    }
+    50% {
+        transform: translate(-2.2rem, -2rem) rotate(30deg);
+    }
+    100% {
+        transform: translate(-2.2rem, -2rem) rotate(20deg);
+    }
 }
