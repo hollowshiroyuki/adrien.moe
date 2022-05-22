@@ -6,7 +6,7 @@
     display: block;
     position: absolute;
     height: var(--size);
-    content:url("../assets/adrien_dvd.png");
+    content: url("../assets/adrien_dvd.png");
     animation:  👈👉 5.2s linear 0s infinite alternate,
                 👆👇 2.2s linear 0s infinite alternate,
                   🌀 .6s linear 0s infinite;

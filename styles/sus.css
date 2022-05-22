@@ -1,0 +1,21 @@
+#📀.🦴 {
+    content: url("../assets/adrien_slash.png");
+}
+
+.😁 .🌀 div {
+    background: url("../assets/sus.png");
+}
+
+#🔪 {
+    height: 30rem;
+    content: url("../assets/amongus.png");
+    animation: infinite linear 1s 🔪;
+}
+
+@keyframes 🔪 {
+    from {
+        transform: rotate3d(0, 0, 0, 0);
+    } to {
+        transform: rotate3d(0.7, 3, -0.7, 360deg);
+    }
+}

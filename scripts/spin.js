@@ -9,5 +9,5 @@ window.addEventListener('load', () => {
             circle.style.transform = `rotate(${angle}deg) translate(${circlegraph.clientWidth / 2}px)`;
         }
     });
-    console.info("loaded");
+    console.info("👌");
 });
