@@ -2,7 +2,7 @@
     --dvd-size: 13rem;
 }
 
-.📀
+#📀
 {
     z-index: 1;
     user-select: none;
@@ -15,13 +15,13 @@
                 weeee .6s linear 0s infinite;
 }
 
-.📀 img {
+#📀 img {
     width: 100%;
     height: 100%;
 }
 
 @media mobile {
-    .📀 {
+    #📀 {
         width: 12rem;
         height: 12rem;
         animation:  moveX 10s linear 0s infinite alternate,

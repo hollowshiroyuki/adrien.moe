@@ -15,6 +15,22 @@ function init() {
     }
   })
 
+  document.getElementById("📀").addEventListener('click', function kill() {
+    this.removeEventListener('click', kill);
+    document.querySelector("#📀 img").src = "assets/adrien_slash.png";
+    document.getElementById("🔪").style.visibility = "visible";
+    let jukebox = document.getElementById("🎶")
+    jukebox.loop = false;
+    jukebox.src = "assets/slash.mp3";
+    jukebox.play();
+    jukebox.addEventListener('ended', () => {
+      jukebox.src = "assets/sus.mp3";
+      jukebox.loop = true;
+      jukebox.play();
+    });
+    console.log("slash !");
+  });
+
   console.log("\
             .:::----::.\n\
           .:-----========-.\n\
