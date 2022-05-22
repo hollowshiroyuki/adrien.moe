@@ -7,11 +7,10 @@ function init() {
 
   document.querySelectorAll('.🌀').forEach((circlegraph)=>{
     let circles = circlegraph.querySelectorAll('div')
-    let angle = 360-90, dangle = 360 / circles.length
+    let angle = 360-90, dangle = 360 / circles.length;
     for(let i = 0; i < circles.length; i++){
-      let circle = circles[i]
-      angle += dangle
-      // rotate(${angle}deg)
+      let circle = circles[i];
+      angle += dangle;
       circle.style.transform = `rotate(${angle}deg) translate(${circlegraph.clientWidth / 2}px)`
     }
   })

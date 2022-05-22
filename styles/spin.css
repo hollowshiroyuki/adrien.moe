@@ -27,7 +27,7 @@
     left: 50%;
     width: 150px;
     height: 150px;
-    margin: calc(-100px / 2);
+    margin: calc(-150px / 2);
     border-radius: 30%;
     background: url('../assets/adrien_dvd.png');
 }
